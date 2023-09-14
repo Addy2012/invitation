@@ -1,38 +1,57 @@
 .App {
-  text-align: center;
+  background-image: url('./assets/newphoto.JPG');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-page {
+  z-index: 1;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.greeting-message-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+
+.greeting-message {
+  text-align: center;
+  font-size: 2em;
+  background: linear-gradient(45deg, #ff4e50, #f9d423);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 2px #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container {
+  padding: 10px 20px;
+  background-color: #493313;
+  position: absolute;
+  bottom: 208px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+button,
+button:focus {
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+  color: #ffd6a4;
+}
+
+button:active {
+  outline: none;
+  background: transparent;
+  border: 1px solid grey;
+  color: #ffd6a4;
 }
